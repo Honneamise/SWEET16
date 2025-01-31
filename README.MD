@@ -131,14 +131,15 @@ and will be assembled as :
 
 ## Errata
 
-- **PAGE 156** : In the POP function example the opcodes values for indirect store are wrong, 0x35 opcodes should be instead 0x55 
+- **PAGE 156** : In the example of the POP function the opcodes values for indirect store are wrong, 0x35 opcodes should be instead 0x55 
 
 - **PAGE 156** : The description of the STP function is wrong, the byte at 0xA033 will be moved at 0x9021, the byte at 0xA032 will be moved at 0x901F
 
 - **PAGE 156** : The description of the SUB operation is misleading, the CF flag should be set only if ACC is "strictly" greater then RN.\
-Also in the example of the SUB function the opcodes are wrong, 0xA0 opcode should be instead 0xB0, 0xA1 opcode should be instead 0xB1 .
+Also the opcodes of the SUB function are wrong, 0xA0 opcode should 0xB0, 0xA1 opcode should be 0xB1 .
 
-
+- **PAGE 159** : In the section of the BS function the location of the MOVE routine at 320 is wrong, the correct address is 332.
+        
 ## Reference
 
 Wikipedia :\
