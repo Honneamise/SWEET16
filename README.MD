@@ -129,6 +129,8 @@ and will be assembled as :
 
 `0x41, 0x52, 0xF3, 0x07, 0xFB, 0x00`
 
+**NOTE:** R1,R2 and R3 should be set to some known value
+
 ## Errata
 
 - **PAGE 156** : In the example of the POP function the opcodes values for indirect store are wrong, 0x35 opcodes should be instead 0x55 

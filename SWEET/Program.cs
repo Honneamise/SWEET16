@@ -27,8 +27,10 @@ public class Program
         //call interpreter
         if (args.Length == 3 && args[0] == "-e")
         {
-            ushort entry = ushort.Parse(args[1]);
-            
+            int bas = args[1].StartsWith("0x") ? 16 : 10;
+
+            ushort entry = Convert.ToUInt16(args[1], bas);
+
             byte[] code = File.ReadAllBytes(args[2]);
 
             Interpreter intp = new(entry, code);

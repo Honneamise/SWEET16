@@ -32,6 +32,8 @@ public class Interpreter
         {
             Execute();
         }
+
+        Bk();
     }
 
     //execute a single instruction
@@ -179,7 +181,7 @@ public class Interpreter
         Console.WriteLine($"Brk code: 0x{Mem[PC]:X}");
         for (int i = 0; i < Regs.Length/2; i++)
         {
-            Console.WriteLine($"R[{i}]: {Regs[i]}\t R[{i + 8}]: {Regs[i + 8]}");
+            Console.WriteLine($"R[{i}]: {Regs[i]:X4}\t R[{i + 8}]: {Regs[i + 8]:X4}");
         }
     }
 
